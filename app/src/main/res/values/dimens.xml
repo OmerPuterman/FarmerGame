@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heart_dimens">40dp</dimen>
+    <dimen name="hearts_layout_width">140dp</dimen>
+    <dimen name="heart_margins">10dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="button_def_width">180dp</dimen>
+    <dimen name="button_def_height">90dp</dimen>
+    <dimen name="carrot_def_size">60dp</dimen>
+    <dimen name="carrot_def_margin">30dp</dimen>
+</resources>
