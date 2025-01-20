@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#90CAF9</color>
     <color name="my_blue">#2F45C3</color>
+    <color name="scores_bg">#004881</color>
 </resources>

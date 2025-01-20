@@ -2,4 +2,11 @@
     <string name="app_name">Project1.0</string>
     <string name="left_arrow"><![CDATA[<-]]></string>
     <string name="right_arrow"><![CDATA[->]]></string>
+    <string name="def_score_value">0</string>
+    <string name="start_game">Start Game</string>
+    <string name="quit">Quit</string>
+    <string name="high_scores">High Scores</string>
+    <string name="button_controls">Button Controls</string>
+    <string name="back">Back</string>
+    <string name="delay_500_ms">Delay: 500 ms</string>
 </resources>

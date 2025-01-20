@@ -12,6 +12,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="@dimen/hearts_layout_width"
         android:layout_height="@dimen/heart_dimens"
+        android:id="@+id/hearts"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/default_margin"
@@ -48,17 +49,17 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="100dp"
         android:orientation="vertical"
         >
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="20dp">
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            >
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/main_IMG_farmer1"
@@ -82,6 +83,22 @@
                 app:srcCompat="@drawable/farmer"
                 android:layout_gravity="center_horizontal"
             />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_farmer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/farmer"
+                android:layout_gravity="center_horizontal"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_farmer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/farmer"
+                android:layout_gravity="center_horizontal"
+                />
     </LinearLayout>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -90,12 +107,13 @@
 
     //arrows
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        >
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
@@ -130,144 +148,655 @@
             />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-// obsticals
+    // obstacles carrot
     <LinearLayout
-        android:id="@+id/obstaclesLayout"
+        android:id="@+id/obstaclesLayout_carrot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="35dp">
+        android:layout_marginTop="95dp">
 
+    <!-- Row 0 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+        >
+        <ImageView
+            android:id="@+id/obstacle_0_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_0_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_0_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_0_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_0_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-
-            <ImageView
-                android:layout_width="@dimen/carrot_def_size"
-                android:layout_height="@dimen/carrot_def_size"
-                android:layout_margin="@dimen/carrot_def_margin"
-                android:src="@drawable/carrot" />
-        </LinearLayout>
-
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_1_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_1_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_1_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_1_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_1_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_2_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_2_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_2_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_2_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_2_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_3_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_3_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_3_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_3_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_3_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_4_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_4_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_4_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_4_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_4_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_5_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_5_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_5_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_5_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_5_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_6_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_6_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_6_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_6_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_6_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
+    <!-- Row 7 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_7_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_7_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_7_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_7_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+        <ImageView
+            android:id="@+id/obstacle_7_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/carrot"/>
+    </LinearLayout>
 
     </LinearLayout>
 
+    // obstacles dollar
+    <LinearLayout
+        android:id="@+id/obstaclesLayout_dollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="95dp">
+
+        <!-- Row 0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_0_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_0_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_0_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_0_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_0_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+
+        <!-- Repeat for additional rows -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_1_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_1_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_1_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_1_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_1_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_2_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_2_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_2_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_2_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_2_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+
+
+    <!-- Row 0 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_dollar_3_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_3_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_3_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_3_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_3_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+    </LinearLayout>
+
+    <!-- Row 0 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/obstacle_dollar_4_0"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_4_1"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_4_2"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_4_3"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/obstacle_dollar_4_4"
+            android:layout_width="@dimen/icon_def_size"
+            android:layout_height="@dimen/icon_def_size"
+            android:layout_margin="@dimen/icon_def_margin"
+            android:src="@drawable/dollar"/>
+    </LinearLayout>
+
+        <!-- Row 0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_5_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_5_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_5_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_5_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_5_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+        <!-- Row 0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_6_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_6_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_6_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_6_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_6_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+
+        <!-- Row 0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/obstacle_dollar_7_0"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_7_1"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_7_2"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_7_3"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+            <ImageView
+                android:id="@+id/obstacle_dollar_7_4"
+                android:layout_width="@dimen/icon_def_size"
+                android:layout_height="@dimen/icon_def_size"
+                android:layout_margin="@dimen/icon_def_margin"
+                android:src="@drawable/dollar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/def_score_value"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/my_blue"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delay_500_ms"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/my_blue"
+        />
 
 </RelativeLayout>
+
+
 
 

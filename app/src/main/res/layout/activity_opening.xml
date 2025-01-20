@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer Game"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/my_blue"
+            android:layout_marginBottom="50dp" />
+
+        <RadioGroup
+            android:id="@+id/opening_RADIO_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/opening_RADIO_tilt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tilt Controls"
+                android:checked="true"
+               android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/opening_RADIO_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_controls"
+                android:textColor="@color/black"
+                />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/opening_BTN_start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_game"
+            android:textSize="20sp"
+            android:backgroundTint="@color/my_blue"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/opening_BTN_quit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quit"
+            android:textSize="20sp"
+            android:backgroundTint="@color/my_blue"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/opening_BTN_scores"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/high_scores"
+            android:textSize="20sp"
+            android:backgroundTint="@color/my_blue"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
